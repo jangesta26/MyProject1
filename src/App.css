@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+body{
+  font-family: "Inter", sans-serif;
+}
+
+nav{
+  z-index: 10001 !important;
+}
+
+.gradientBG {
+  background: linear-gradient(110.1deg,#A2D240, #1B8B00);
+}
+
+.gradientBG2 {
+  background: linear-gradient(110.1deg, #1B8B00, #A2D240);
+}
+
+#mobile-toggle-nav {
+  display:none;
+}
+
+
+.btn-primary {
+  @apply py-3 px-8 bg-amber-500 font-medium text-gray-950 rounded
+  hover:bg-slate-400 transition-all duration-300;
+}
+
+.btn-primary2 {
+  @apply py-3 px-8 bg-amber-500 font-medium shadow-3xl text-gray-950 rounded
+  hover:bg-slate-400 transition-all duration-300;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  
+  #mobile-toggle-nav {
+    display:flex;
+  }
+}
